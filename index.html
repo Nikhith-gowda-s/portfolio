@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Nikhith Gowda S</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#06090f;
+  --surface:#0b1120;
+  --card:#0f1a2e;
+  --border:#1a2a45;
+  --cyan:#00d4ff;
+  --cyan2:#0099bb;
+  --magenta:#ff00aa;
+  --gold:#f5a623;
+  --green:#00ff88;
+  --white:#e8f0ff;
+  --muted:#5a7090;
+  --glow: 0 0 20px rgba(0,212,255,0.4), 0 0 60px rgba(0,212,255,0.15);
+  --glow-mg: 0 0 20px rgba(255,0,170,0.4), 0 0 60px rgba(255,0,170,0.1);
+}
+body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;overflow-x:hidden}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--cyan2);border-radius:2px}
+
+/* ── CANVAS BG ── */
+#particle-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 52px;
+  background:rgba(6,9,15,0.75);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(0,212,255,0.1);
+  transition:background 0.3s;
+}
+.nav-logo{
+  font-family:'Space Grotesk',sans-serif;
+  font-weight:700;font-size:1.05rem;letter-spacing:0.1em;
+  color:var(--cyan);text-shadow:var(--glow);
+}
+.nav-logo span{color:var(--white)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{
+  text-decoration:none;color:var(--muted);
+  font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
+  transition:color 0.2s;position:relative;padding-bottom:4px;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:0;left:0;width:0;height:1px;
+  background:var(--cyan);transition:width 0.3s;
+}
+.nav-links a:hover{color:var(--cyan)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{
+  background:transparent;border:1px solid var(--cyan);
+  color:var(--cyan);padding:8px 22px;
+  font-size:0.78rem;font-weight:600;letter-spacing:0.1em;
+  cursor:pointer;text-decoration:none;display:inline-block;
+  transition:all 0.25s;text-transform:uppercase;
+}
+.nav-cta:hover{background:var(--cyan);color:var(--bg);box-shadow:var(--glow)}
 
