@@ -8,8 +8,6 @@ This portfolio showcases my journey as a Computer Science undergraduate speciali
 
 🔗 https://nikhiths.pages.dev/
 
-> Replace this with your Cloudflare Pages URL or custom domain.
-
 ## 👨‍💻 About Me
 
 I'm a B.Tech Computer Science & Engineering student at **JAIN (Deemed-to-be University), Bengaluru**, passionate about building secure, intelligent, and resilient systems through research and innovation.
